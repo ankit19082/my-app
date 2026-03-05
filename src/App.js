@@ -90,7 +90,7 @@ function App() {
           }}
           onClick={() => setCurrentView("todo")}
         >
-          To-Do List
+          ➡️ To-Do List
         </button>
       </nav>
 
