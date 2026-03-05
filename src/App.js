@@ -18,6 +18,7 @@ function App() {
           Learn React
         </a>
         <h1>Welcome to My App</h1>
+        <p>This is a simple React application.</p>
       </header>
     </div>
   );
