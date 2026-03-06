@@ -83,7 +83,8 @@ function App() {
         >
           🏠 Home
         </button>
-        <button
+        {/* To-Do List button hidden as per Jira ticket requirement */}
+        {/* <button
           style={{
             ...navButtonStyle,
             backgroundColor: currentView === "todo" ? "#4fa8c7" : "#61dafb",
@@ -91,7 +92,7 @@ function App() {
           onClick={() => setCurrentView("todo")}
         >
           ➡️ To-Do List
-        </button>
+        </button> */}
       </nav>
 
       {/* Conditional Rendering */}
