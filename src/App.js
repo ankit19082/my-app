@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import ToDo from "./component/todo/ToDo.jsx";
-import Login from "./component/login/Login.jsx";
 
 function App() {
   const [currentView, setCurrentView] = useState("home");
@@ -84,15 +83,6 @@ function App() {
         >
           🏠 Home
         </button>
-        <button
-          style={{
-            ...navButtonStyle,
-            backgroundColor: currentView === "login" ? "#4fa8c7" : "#61dafb",
-          }}
-          onClick={() => setCurrentView("login")}
-        >
-          🔑 Login
-        </button>
         {/* To-Do List button hidden as per Jira ticket requirement */}
         {/* <button
           style={{
@@ -135,8 +125,6 @@ function App() {
             Click Me!
           </button>
         </header>
-      ) : currentView === "login" ? (
-        <Login />
       ) : (
         <ToDo />
       )}
